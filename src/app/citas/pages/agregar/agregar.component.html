@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>Citas - Nueva cita</h1>
+  <hr />
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 datosCita">
+        <mat-form-field appearance="fill" id="fecha">
+          <mat-label>Seleccione fecha</mat-label>
+          <input matInput  [matDatepicker]="picker" required />
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" id="hora">
+          <mat-label>Seleccione hora</mat-label>
+          <input type="time"  matInput required />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" id="idPrueba">
+          <mat-label>Id Prueba</mat-label>
+          <mat-select>
+            <mat-option value="one">123</mat-option>
+            <mat-option value="two">456</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" id="idAfiliado">
+          <mat-label>Id Afiliado</mat-label>
+          <mat-select>
+            <mat-option value="one">123</mat-option>
+            <mat-option value="two">456</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col-12 operation">
+        <button mat-raised-button color="primary">Guardar</button>
+        <button mat-raised-button color="warn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+hr {
+  color: #3f51b5;
+  height: 2px;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.datosCita {
+  mat-form-field {
+    margin-right: 2rem;
+  }
+
+  #fecha,
+  #hora,
+  #idPrueba,
+  #idAfiliado {
+    width: 240px;
+  }
+}
+
+.operation {
+  display: flex;
+  justify-content: flex-end;
+
+  .mat-raised-button {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+}
